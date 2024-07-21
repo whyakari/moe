@@ -19,22 +19,22 @@ pack-deb:
 	@mkdir -v $(O)/deb
 	@mkdir -pv $(O)/deb$(PREFIX)
 	@mkdir -pv $(O)/deb$(PREFIX)/bin/
-	@mkdir -pv $(O)/deb$(PREFIX)/share/oneshot/
-	@cp -rv src/oneshot $(O)/deb$(PREFIX)/bin/
-	@cp -rv share/* $(O)/deb$(PREFIX)/share/oneshot/
+	@mkdir -pv $(O)/deb$(PREFIX)/share/moe/
+	@cp -rv src/moe $(O)/deb$(PREFIX)/bin/
+	@cp -rv share/* $(O)/deb$(PREFIX)/share/moe/
 	@cp -rv dpkg-conf $(O)/deb/DEBIAN
 	@printf "\033[1;38;2;254;228;208m[+] Build packages.\033[0m\n"&&sleep 1s
 	@chmod -Rv 755 $(O)/deb/DEBIAN
 	@chmod -Rv 755 $(O)/deb$(PREFIX)/bin
-	@chmod -Rv 777 $(O)/deb$(PREFIX)/bin/oneshot
-	@cd $(O)/deb&&dpkg -b . ../../oneshot.deb
+	@chmod -Rv 777 $(O)/deb$(PREFIX)/bin/moe
+	@cd $(O)/deb&&dpkg -b . ../../moe.deb
 	@printf "\033[1;38;2;254;228;208m    .^.   .^.\n"
 	@printf "    /⋀\\_ﾉ_/⋀\\ \n"
 	@printf "   /ﾉｿﾉ\\ﾉｿ丶)|\n"
 	@printf "  |ﾙﾘﾘ >   )ﾘ\n"
 	@printf "  ﾉノ㇏ Ｖ ﾉ|ﾉ\n"
 	@printf "        ⠁⠁\n"
-	@printf "\033[1;38;2;254;228;208m[*] Build done, package: oneshot.deb\033[0m\n"
+	@printf "\033[1;38;2;254;228;208m[*] Build done, package: moe.deb\033[0m\n"
 
 clear:
 	rm -rf ./$(O)
