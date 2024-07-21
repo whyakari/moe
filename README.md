@@ -1,14 +1,14 @@
 **Disclaimer**: I am not responsible for what you do with this tool or this information. The use of this tool should only be attempted on networks you own or have permission to test. please use this tool wisely.
 
 # Moe (Termux)
-MoeHacker is a Implementation of [oneshot](https://github.com/drygdryg/OneShot) on Termux with DEB package, is a WiFi Hacking tool that allows runs WPS PIN attacks ([Pixie Dust](https://forums.kali.org/showthread.php?24286-WPS-Pixie-Dust-Attack-Offline-WPS-Attack) and bruteforce) without monitor mode with the wpa_supplicant, Originally made by @rofl0r and modded by @drygdryg.
+Moe is a Implementation of [oneshot](https://github.com/drygdryg/OneShot) on Termux with DEB package, is a WiFi Hacking tool that allows runs WPS PIN attacks ([Pixie Dust](https://forums.kali.org/showthread.php?24286-WPS-Pixie-Dust-Attack-Offline-WPS-Attack) and bruteforce) without monitor mode with the wpa_supplicant, Originally made by @rofl0r and modded by @drygdryg.
 
-# Installation
+## Installation
 ```shell
-apt install ./moe.deb
+wget https://github.com/whyakari/moe/releases/download/v0.1.1/moe.deb && apt install ./moe.deb
 ```
 
-# DEB package build
+## DEB package build
 ```shell
 make pack-deb
 ```
