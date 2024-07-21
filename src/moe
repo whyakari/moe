@@ -1023,8 +1023,8 @@ class WiFiScanner:
             return
         while 1:
             try:
-                system("clear")
                 networkNo = input('Select target (press Enter to refresh): ')
+                system("clear")
                 if networkNo.lower() in ('r', '0', ''):
                     return self.prompt_network()
                 elif int(networkNo) in networks.keys():
